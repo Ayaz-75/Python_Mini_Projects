@@ -57,5 +57,6 @@ Using the famous **Pima Indians Diabetes Dataset** (`diabetes.csv`)
 
 # → Only 31 patients match all 3 risk factors!
 
-Conclusion: Filtering lets us go from 768 rows → just the few patients who need urgent attention.
-Today: Added real-world filter_rows.py with multiple thresholds + saved results
+#### Conclusion: Filtering lets us go from 768 rows → just the few patients who need urgent attention.
+
+#### Today: Added real-world filter_rows.py with multiple thresholds + saved results
