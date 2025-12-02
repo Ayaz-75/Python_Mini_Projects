@@ -45,15 +45,15 @@ Using the famous **Pima Indians Diabetes Dataset** (`diabetes.csv`)
 
 ### Key Filtering Examples Tested
 
-| Condition              | Code Example                 | Result (rows) |
-| ---------------------- | ---------------------------- | ------------- |
-| Glucose > 120          | `df[df['Glucose'] > 120]`    | 349 patients  |
-| Glucose > 150          | `df[df['Glucose'] > 150]`    | 188 patients  |
-| Glucose > 180 (severe) | `df[df['Glucose'] > 180]`    | 66 patients   |
-| BMI > 30 (obese)       | `df[df['BMI'] > 30]`         | 449 patients  |
-| Age ≥ 50               | `df[df['Age'] >= 50]`        | 87 patients   |
-| Pregnant ≥ 5 times     | `df[df['Pregnancies'] >= 5]` | 118 patients  |
-| Diabetic patients only | `df[df['Outcome'] == 1]`     | 268 patients  |
+| Condition              | Code Example                     | Result (rows) |
+| ---------------------- | -------------------------------- | ------------- |
+| Glucose > 120          | `data[data['Glucose'] > 120]`    | 349 patients  |
+| Glucose > 150          | `data[data['Glucose'] > 150]`    | 188 patients  |
+| Glucose > 180 (severe) | `data[data['Glucose'] > 180]`    | 66 patients   |
+| BMI > 30 (obese)       | `data[data['BMI'] > 30]`         | 449 patients  |
+| Age ≥ 50               | `data[data['Age'] >= 50]`        | 87 patients   |
+| Pregnant ≥ 5 times     | `data[data['Pregnancies'] >= 5]` | 118 patients  |
+| Diabetic patients only | `data[data['Outcome'] == 1]`     | 268 patients  |
 
 # → Only 31 patients match all 3 risk factors!
 
