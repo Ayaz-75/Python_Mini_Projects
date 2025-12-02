@@ -35,3 +35,27 @@ If salaries are [30k, 32k, 35k, 38k, 500k] → mean = ~127k (misleading!)
 → median = 35k (realistic middle value)
 
 Today: Generated automated `report.pdf` using pandas + ReportLab
+
+## 2025-12-02 – Filtering Data with Real Diabetes Dataset
+
+### Dataset
+
+Using the famous **Pima Indians Diabetes Dataset** (`diabetes.csv`)  
+→ 768 patients, 8 health measurements + Outcome (0 = no diabetes, 1 = diabetes)
+
+### Key Filtering Examples Tested
+
+| Condition              | Code Example                 | Result (rows) |
+| ---------------------- | ---------------------------- | ------------- |
+| Glucose > 120          | `df[df['Glucose'] > 120]`    | 349 patients  |
+| Glucose > 150          | `df[df['Glucose'] > 150]`    | 188 patients  |
+| Glucose > 180 (severe) | `df[df['Glucose'] > 180]`    | 66 patients   |
+| BMI > 30 (obese)       | `df[df['BMI'] > 30]`         | 449 patients  |
+| Age ≥ 50               | `df[df['Age'] >= 50]`        | 87 patients   |
+| Pregnant ≥ 5 times     | `df[df['Pregnancies'] >= 5]` | 118 patients  |
+| Diabetic patients only | `df[df['Outcome'] == 1]`     | 268 patients  |
+
+# → Only 31 patients match all 3 risk factors!
+
+Conclusion: Filtering lets us go from 768 rows → just the few patients who need urgent attention.
+Today: Added real-world filter_rows.py with multiple thresholds + saved results
