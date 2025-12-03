@@ -1,10 +1,9 @@
 # 📚 Python_Mini_Projects — CSV Analysis Tool & Image Resizer"
 
 **This repository contains two Week-1 mini-projects** designed to build a foundation for **Machine Learning**, **Deep Learning**, and **Computer Vision**:
--     **CSV_Analysis_Tool** — a small pipeline to load, analyze and visualize CSV data (Pima Diabetes dataset).
-      **Image_Resizer** — an image preprocessing tool to resize, preserve aspect ratio, batch process, convert formats, and visualize image distributions.
-# Python Mini Projects  
-A collection of clean, well-documented Python projects – perfect for learning & portfolio
+-     CSV_Analysis_Tool — a small pipeline to load, analyze and visualize CSV data (Pima Diabetes dataset).
+-     Image_Resizer — an image preprocessing tool to resize, preserve aspect ratio, batch process, convert formats, and visualize image distributions.
+
 
 **Repository Folder Structure**
 
