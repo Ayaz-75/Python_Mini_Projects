@@ -1,15 +1,27 @@
-title: "CSV Analysis Tool"
-summary: |
-A complete Python toolkit for loading, analyzing, visualizing, and generating
-automated PDF reports from CSV datasets. Built for research workflows,
-university applications, and hands-on data analysis practice.
+## "📊 CSV Analysis Tool"
 
-project_structure: |
+tagline: "A clean, modular, research-ready pipeline for CSV analytics, visualization & reporting."
+
+### description: >
+
+🚀 **CSV Analysis Tool** is a beginner-friendly yet research-grade project designed to teach
+Python fundamentals, data analysis, NumPy, Pandas, visualization, and automated report
+generation.  
+ Perfect for students preparing for **professor outreach**, **research positions**, or
+**scholarship applications**.
+
+### project_structure: |
+
+📁 **Project Directory**
+
+---
+
 CSV_ANALYSIS_TOOL/
-├── data/
+│
+├── 📂 data/
 │ └── diabetes.csv
 │
-├── scripts/
+├── 📂 scripts/
 │ ├── column_stats.py
 │ ├── filter_rows.py
 │ ├── generate_report.py
@@ -20,72 +32,74 @@ CSV_ANALYSIS_TOOL/
 │ ├── pandas_numpy_stats.py
 │ └── stats.py
 │
-├── README.md
-└── report.pdf
+├── 📄 README.md
+└── 📄 report.pdf
 
-features:
+#### features:
 
-- name: "CSV Loader"
-  description: "Loads CSV files reliably with error handling."
+- name: "📥 Load CSV"
   file: "load_csv.py"
+  description: "Loads CSV files safely using pandas with error handling."
 
-- name: "Column Statistics Generator"
-  description: "Computes mean, median, max, and min for all numeric columns."
+- name: "📈 Column Statistics"
   file: "column_stats.py"
+  description: "Generates mean, median, max, min for each column."
 
-- name: "Advanced Row Filtering"
-  description: "Extracts subsets of data based on clinical or statistical thresholds."
+- name: "🔍 Intelligent Filtering"
   file: "filter_rows.py"
+  description: "Filters high-risk medical cases (Glucose/BMI/Age/Outcome)."
 
-- name: "NumPy Analytics"
-  description: "Performs fast numerical computations using NumPy arrays."
+- name: "🧮 NumPy Analytics"
   file: "numpy_basics.py"
+  description: "Converts columns to arrays and computes mathematical stats."
 
-- name: "Pandas + NumPy Integration"
-  description: "Combines pandas DataFrames with NumPy arrays for efficient processing."
+- name: "📊 Pandas + NumPy Integration"
   file: "pandas_numpy_stats.py"
+  description: "Column-wise looping with combined libraries."
 
-- name: "Data Visualization"
-  description: "Generates histograms for glucose, BMI, age, and more."
+- name: "📉 Visualizations"
   files:
 
   - "glucose_histogram.py"
   - "multiple_plots.py"
+    description: "Histogram plots for Glucose, BMI, Age using Matplotlib."
 
-- name: "Automated PDF Report"
-  description: "Creates polished PDF summaries with statistics and insights."
+- name: "📄 Automated PDF Report"
   file: "generate_report.py"
+  description: "Produces professional research-style PDF summaries."
 
-dataset:
-name: "Pima Indians Diabetes Dataset"
-details:
+#### dataset:
+
+name: "🩺 Pima Indians Diabetes Dataset"
 rows: 768
 columns: 9
-description: |
-Contains medical diagnostic measurements (glucose, BMI, insulin,
-pregnancies, outcome) used for diabetes prediction research.
+description: >
+A real medical dataset containing glucose levels, BMI, pregnancies, insulin,
+and diabetes outcome — ideal for learning filtering, stats, and visualization.
 
-installation:
-requirements: - python >= 3.8 - pandas - numpy - matplotlib - reportlab
+#### installation:
+
 commands: - "pip install pandas numpy matplotlib reportlab"
 
-usage:
-run_examples: - "python scripts/load_csv.py" - "python scripts/column_stats.py" - "python scripts/filter_rows.py" - "python scripts/numpy_basics.py" - "python scripts/pandas_numpy_stats.py" - "python scripts/glucose_histogram.py" - "python scripts/multiple_plots.py"
+#### usage:
 
-report_generation:
+run_scripts: - "python scripts/load_csv.py" - "python scripts/column_stats.py" - "python scripts/filter_rows.py" - "python scripts/numpy_basics.py" - "python scripts/pandas_numpy_stats.py" - "python scripts/glucose_histogram.py" - "python scripts/multiple_plots.py"
+
+#### generate_report:
+
 command: "python scripts/generate_report.py"
-output: "report.pdf"
 
-outputs:
+#### outputs:
 
-- "Automated PDF report"
-- "Filtered CSV subsets"
-- "Histogram visualizations"
-- "Console-based descriptive statistics"
+- "📄 report.pdf"
+- "📁 filtered CSV results"
+- "🖼️ histograms and visualizations"
+- "📊 console statistics"
 
-purpose: |
-This repository is part of a structured, discipline-oriented learning program
-aimed at developing strong fundamentals in data analysis, visualization,
-statistics, and research communication.
+#### purpose: >
 
-author: "Ayaz Ali"
+This project is part of a structured, high-discipline roadmap designed to
+build strong practical foundations for research in **Computer Vision**,  
+ **Machine Learning**, and **Medical AI**.
+
+## author: "👨‍💻 Ayaz Ali"
