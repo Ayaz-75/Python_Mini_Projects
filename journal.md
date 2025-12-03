@@ -96,17 +96,109 @@ It's a lightweight alternative to Excel.
       The project is now fully functional: data loading, statistics, filtering,
       visualizations, and automated reporting — all done.
 
-#### git_commands:
+## 2025-12-03 – Image Resizer Project
 
-push: | # 🚀 Push to GitHub
-git add .
-git commit -m "Full CSV Analysis Tool: stats, visualizations, PDF report, journal + README"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/CSV_ANALYSIS_TOOL.git
-git push -u origin main
+### What is PIL (Pillow)?
 
-#### fix_remote: |
+- **PIL** = Python Imaging Library
+- **Pillow** = modern, actively maintained fork of PIL
+- The gold standard for opening, manipulating, and saving images in Python
 
-git remote remove origin
-git remote add origin https://github.com/YOUR_USERNAME/CSV_ANALYSIS_TOOL.git
-git push -u origin main
+### Why Pillow?
+
+```python
+from PIL import Image
+img = Image.open("photo.jpg")  # Supports JPEG, PNG, WebP, BMP, TIFF, etc.
+```
+
+## 1 – Setup + Test Image"
+
+tasks:
+
+- Create `Image_Resizer` folder with subfolders `images_input` & `images_output`
+- Download 5 sample images and place in `images_input`
+- Install Python + Pillow library (`pip install pillow`)
+
+##### notes:
+
+      - Understand **PIL** library
+      - Learn how to open an image and check its **size**
+      - Difference between original and resized images
+
+## 2 – Basic Resize
+
+tasks:
+
+- Resize an image to **256x256** - Save resized images to `images_output`
+
+##### notes:
+
+      - `resize()` method
+      - Aspect ratio may be distorted if fixed size is used
+      - Importance of consistent image size for ML
+
+## 3 – Aspect Ratio Preservation
+
+tasks:
+
+- Use `thumbnail()` to resize while **preserving aspect ratio**
+
+##### notes:
+
+      - Difference between `resize()` and `thumbnail()`
+      - Aspect ratio preservation helps avoid distorted images in ML
+
+## 4 – Batch Resize with Subfolders
+
+tasks:
+
+- Resize all images in input folder, including subfolders
+- Preserve folder structure in `images_output`
+
+##### notes:
+
+      - `os.walk()` for traversing folders
+      - Benefits of batch preprocessing for large datasets
+
+## 5 – Image Format Conversion
+
+tasks:
+
+- Convert all images to **JPG**
+- Save converted images in output folder
+
+##### notes:
+
+      - Difference between PNG and JPG
+      - Standardizing formats helps ML pipelines
+
+## 6 – Multi-Threaded Resizing
+
+tasks:
+
+- Use `concurrent.futures.ThreadPoolExecutor` for faster batch processing
+
+##### notes:
+
+      - Benefits of parallel processing
+      - Scales well for large datasets
+
+## 7 – Visualization
+
+tasks:
+
+- Count images per folder
+- Visualize image size distribution using Matplotlib
+
+##### notes:
+
+      - Learned skills:
+        - PIL, batch processing, aspect ratio, multi-threading
+        - Reflections on ML pipeline preparation
+
+# summary:
+
+## ✅ Week 1 Summary"
+
+- Fully functional Image Resizer repo
+- journal completed
