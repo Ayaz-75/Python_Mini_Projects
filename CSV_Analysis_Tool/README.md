@@ -1,6 +1,6 @@
 ## "📊 CSV Analysis Tool"
 
-tagline: "A clean, modular, research-ready pipeline for CSV analytics, visualization & reporting."
+"A clean, modular, research-ready pipeline for CSV analytics, visualization & reporting."
 
 ### description: >
 
