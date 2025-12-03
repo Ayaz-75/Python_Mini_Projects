@@ -3,37 +3,33 @@
 **This repository contains two Week-1 mini-projects** designed to build a foundation for **Machine Learning**, **Deep Learning**, and **Computer Vision**:
 -     **CSV_Analysis_Tool** — a small pipeline to load, analyze and visualize CSV data (Pima Diabetes dataset).
       **Image_Resizer** — an image preprocessing tool to resize, preserve aspect ratio, batch process, convert formats, and visualize image distributions.
-
-**Status / What you have done so far:**
--     - ✅ Completed **CSV_Analysis_Tool** with scripts, report and GitHub updates.
--     - ✅ Implemented **Image_Resizer** with full `resize.py` (fixed bugs, directory checks, aspect ratio handling, batch processing, format conversion, visualization).
--     - ✅ Daily commit rule followed for Week 1 items (code + README updates).
--     - ✅ Journal (`journal.md`) and short PDF reports included for both projects.
--     - ✅ Professors list + outreach prep (spreadsheet + draft emails) are part of the repo.
+# Python Mini Projects  
+A collection of clean, well-documented Python projects – perfect for learning & portfolio
 
 **Repository Folder Structure**
-    ```
-    Python_Mini_Projects/
-    ├── CSV_Analysis_Tool/
-    │   ├── data/                  # sample CSVs (e.g., diabetes.csv)
-    │   ├── scripts/
-    │   │   ├── load_csv.py        # load and preview CSV
-    │   │   ├── stats.py           # column statistics
-    │   │   ├── filter_rows.py     # row filtering examples
-    │   │   └── utils.py           # helper functions (optional)
-    │   ├── report.pdf             # short PDF summary of CSV analysis
-    │   └── README.md
-    │
-    ├── Image_Resizer/
-    │   ├── images_input/          # Original images (source)
-    │   ├── images_output/         # Resized images (destination)
-    │   ├── resize.py              # Full pipeline script (resize, thumbnail, batch, convert)
-    │   ├── README.md
-    │   └── report.pdf             # short PDF summary (screenshots + plots)
-    │
-    ├── journal.md                 # Daily notes for Week 1 (CSV + Image Resizer)
-    └── LICENSE
-    ```
+
+```plaintext
+Python_Mini_Projects/
+├── CSV_Analysis_Tool/                  # Complete CSV + pandas project
+│   ├── data/                           # sample CSVs (e.g., diabetes.csv)
+│   ├── scripts/
+│   │   ├── load_csv.py                 # Load and preview CSV
+│   │   ├── stats.py                    # Column statistics
+│   │   ├── filter_rows.py              # Row filtering examples
+│   │   └── utils.py                    # Helper functions (optional)
+│   ├── report.pdf                      # Short PDF summary of CSV analysis
+│   └── README.md
+│
+├── Image_Resizer/                      # Batch image processor
+│   ├── images_input/                   # Original images (source)
+│   ├── images_output/                  # Resized images (destination)
+│   ├── resize.py                       # Full pipeline (resize, thumbnail, batch, convert)
+│   ├── README.md
+│   └── report.pdf                      # Short PDF summary (screenshots + plots)
+│
+├── journal.md                          # Daily notes for Week 1 (CSV + Image Resizer)
+└── LICENSE
+
 
 ## ⚙️ Installation (Environment & Libraries)
     1. Install **Python 3.8+** (recommended using Anaconda or system Python).
