@@ -14,26 +14,28 @@ generation.
 
 📁 **Project Directory**
 
----
+# CSV Analysis Tool
 
+Real-world diabetes dataset analysis using pandas, NumPy & matplotlib
+
+```plaintext
 CSV_ANALYSIS_TOOL/
-│
-├── 📂 data/
-│ └── diabetes.csv
-│
-├── 📂 scripts/
-│ ├── column_stats.py
-│ ├── filter_rows.py
-│ ├── generate_report.py
-│ ├── glucose_histogram.py
-│ ├── load_csv.py
-│ ├── multiple_plots.py
-│ ├── numpy_basics.py
-│ ├── pandas_numpy_stats.py
-│ └── stats.py
-│
-├── 📄 README.md
-└── 📄 report.pdf
+├── data/
+│   └── diabetes.csv
+├── scripts/
+│   ├── column_stats.py
+│   ├── filter_rows.py
+│   ├── generate_report.py
+│   ├── glucose_histogram.py
+│   ├── load_csv.py
+│   ├── multiple_plots.py
+│   ├── numpy_basics.py
+│   ├── pandas_numpy_stats.py
+│   └── stats.py
+├── report.pdf
+├── journal.md
+└── README.md
+```
 
 #### features:
 
@@ -83,7 +85,15 @@ commands: - "pip install pandas numpy matplotlib reportlab"
 
 #### usage:
 
-run_scripts: - "python scripts/load_csv.py" - "python scripts/column_stats.py" - "python scripts/filter_rows.py" - "python scripts/numpy_basics.py" - "python scripts/pandas_numpy_stats.py" - "python scripts/glucose_histogram.py" - "python scripts/multiple_plots.py"
+**run_scripts:**
+
+- "python scripts/load_csv.py"
+- "python scripts/column_stats.py"
+- "python scripts/filter_rows.py"
+- "python scripts/numpy_basics.py"
+- "python scripts/pandas_numpy_stats.py"
+- "python scripts/glucose_histogram.py"
+- "python scripts/multiple_plots.py"
 
 #### generate_report:
 
@@ -99,7 +109,11 @@ command: "python scripts/generate_report.py"
 #### purpose: >
 
 This project is part of a structured, high-discipline roadmap designed to
-build strong practical foundations for research in **Computer Vision**,  
- **Machine Learning**, and **Medical AI**.
+build strong practical foundations for research in **Computer Vision**,
+**Machine Learning**, and **Medical AI**.
 
 ## author: "👨‍💻 Ayaz Ali"
+
+```
+
+```
