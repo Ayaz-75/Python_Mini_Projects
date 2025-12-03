@@ -1,11 +1,11 @@
 title: "CSV Analysis Tool"
-description: >
-A modular Python tool for loading, analyzing, visualizing, and generating reports
-from CSV datasets. Uses Pandas, NumPy, Matplotlib, and ReportLab.
+summary: |
+A complete Python toolkit for loading, analyzing, visualizing, and generating
+automated PDF reports from CSV datasets. Built for research workflows,
+university applications, and hands-on data analysis practice.
 
 project_structure: |
 CSV_ANALYSIS_TOOL/
-│
 ├── data/
 │ └── diabetes.csv
 │
@@ -25,63 +25,67 @@ CSV_ANALYSIS_TOOL/
 
 features:
 
-- name: "Load CSV File"
+- name: "CSV Loader"
+  description: "Loads CSV files reliably with error handling."
   file: "load_csv.py"
-  description: "Safely loads a CSV, handles missing files, returns a pandas DataFrame."
 
-- name: "Column Statistics"
+- name: "Column Statistics Generator"
+  description: "Computes mean, median, max, and min for all numeric columns."
   file: "column_stats.py"
-  description: "Computes mean, median, max, and min for every column."
 
-- name: "Filtering Tool"
+- name: "Advanced Row Filtering"
+  description: "Extracts subsets of data based on clinical or statistical thresholds."
   file: "filter_rows.py"
-  description: "Filters rows based on medical thresholds and saves filtered output."
 
 - name: "NumPy Analytics"
+  description: "Performs fast numerical computations using NumPy arrays."
   file: "numpy_basics.py"
-  description: "Computes array-level stats using NumPy."
 
-- name: "Pandas + NumPy Stats"
+- name: "Pandas + NumPy Integration"
+  description: "Combines pandas DataFrames with NumPy arrays for efficient processing."
   file: "pandas_numpy_stats.py"
-  description: "Loops through columns converting each to NumPy for statistics."
 
-- name: "Visualizations"
+- name: "Data Visualization"
+  description: "Generates histograms for glucose, BMI, age, and more."
   files:
 
   - "glucose_histogram.py"
   - "multiple_plots.py"
-    description: "Histograms of Glucose, BMI, Age using Matplotlib."
 
-- name: "PDF Report Generator"
+- name: "Automated PDF Report"
+  description: "Creates polished PDF summaries with statistics and insights."
   file: "generate_report.py"
-  description: "Creates an automated PDF summary of the dataset."
 
 dataset:
 name: "Pima Indians Diabetes Dataset"
+details:
 rows: 768
 columns: 9
-description: >
-Contains diagnostic measurements such as glucose, BMI, insulin, pregnancies,
-and diabetes outcome.
+description: |
+Contains medical diagnostic measurements (glucose, BMI, insulin,
+pregnancies, outcome) used for diabetes prediction research.
 
 installation:
+requirements: - python >= 3.8 - pandas - numpy - matplotlib - reportlab
 commands: - "pip install pandas numpy matplotlib reportlab"
 
 usage:
-scripts: - "python scripts/load_csv.py" - "python scripts/column_stats.py" - "python scripts/filter_rows.py" - "python scripts/numpy_basics.py" - "python scripts/pandas_numpy_stats.py" - "python scripts/glucose_histogram.py" - "python scripts/multiple_plots.py"
+run_examples: - "python scripts/load_csv.py" - "python scripts/column_stats.py" - "python scripts/filter_rows.py" - "python scripts/numpy_basics.py" - "python scripts/pandas_numpy_stats.py" - "python scripts/glucose_histogram.py" - "python scripts/multiple_plots.py"
 
-generate_report:
+report_generation:
 command: "python scripts/generate_report.py"
+output: "report.pdf"
 
 outputs:
 
-- "report.pdf"
-- "filtered CSV files"
-- "PNG plots (if saved)"
-- "Console statistics"
+- "Automated PDF report"
+- "Filtered CSV subsets"
+- "Histogram visualizations"
+- "Console-based descriptive statistics"
 
-purpose: >
-This tool is part of a structured learning roadmap through Python, data analysis,
-visualization, and research-ready reporting for professor outreach.
+purpose: |
+This repository is part of a structured, discipline-oriented learning program
+aimed at developing strong fundamentals in data analysis, visualization,
+statistics, and research communication.
 
 author: "Ayaz Ali"
