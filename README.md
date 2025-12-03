@@ -31,6 +31,7 @@ Python_Mini_Projects/
 └── LICENSE
 
 
+```
 ## ⚙️ Installation (Environment & Libraries)
     1. Install **Python 3.8+** (recommended using Anaconda or system Python).
     2. Create and activate virtual environment (optional but recommended):
